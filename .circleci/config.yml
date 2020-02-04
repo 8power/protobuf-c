@@ -22,6 +22,7 @@ jobs:
       - run: ls -al
       - run: cd ..
       - run: ls -al
+
       - store_artifacts:
-        path: protobuf-c
+        path: artifacts
     
