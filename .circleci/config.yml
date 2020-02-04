@@ -20,7 +20,7 @@ jobs:
       - run: sudo apt-get install -y autoconf pkg-config build-essential libtool protobuf-compiler libprotobuf-dev libprotoc-dev
       - run: ./autogen.sh && ./configure && make && sudo make install
       - run: sudo mkdir /temp
-      - run: sudo zip -r /temp/protoc-c.tgz .
+      - run: sudo zip -r /temp/protoc-c.zip .
 
       - store_artifacts:
           path: /temp
