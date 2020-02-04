@@ -17,5 +17,5 @@ jobs:
       - checkout
 
       - run: sudo apt-get update
-      - run: sudo apt-get install -y autoconf pkg-config
+      - run: sudo apt-get install -y autoconf pkg-config build-essential libtool
       - run: ./autogen.sh && ./configure && make && sudo make install
