@@ -17,5 +17,5 @@ jobs:
       - checkout
 
       - run: sudo apt-get update
-      - run: sudo apt-get install -y autotools pkg-config
+      - run: sudo apt-get install -y autoconf pkg-config
       - run: ./autogen.sh && ./configure && make && sudo make install
