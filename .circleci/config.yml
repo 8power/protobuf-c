@@ -17,8 +17,5 @@ jobs:
       - checkout
 
       - run: sudo apt-get update
-      - run: sudo apt-get install -y autoconf pkg-config build-essential libtool
-      - run: wget https://github.com/protocolbuffers/protobuf/releases/download/v3.11.2/protoc-3.11.2-linux-x86_64.zip
-      - run: unzip protoc-3.11.2-linux-x86_64.zip
-      - run: sudo cp bin/protoc /usr/local/bin/
+      - run: sudo apt-get install -y autoconf pkg-config build-essential libtool protobuf-compiler libprotobuf-dev libprotoc-dev
       - run: ./autogen.sh && ./configure && make && sudo make install
