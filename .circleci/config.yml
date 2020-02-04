@@ -23,5 +23,5 @@ jobs:
       - run: cd ..
       - run: ls -al
       - store_artifacts:
-        destination: protobuf-c
+        path: protobuf-c
     
